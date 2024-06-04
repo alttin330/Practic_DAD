@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GraphQL CRUD Cliente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>GraphQL CRUD Clientes</h1>
+  
+  <!-- Formulario para añadir item -->
+  <h2>Añadir Item</h2>
+  <input type="text" id="name" placeholder="Nombre">
+  <input type="text" id="description" placeholder="Descripción">
+  <button id="addItem">Añadir</button>
+  
+  <!-- Formulario para actualizar item -->
+  <h2>Actualizar Item</h2>
+  <input type="text" id="updateId" placeholder="ID">
+  <input type="text" id="updateName" placeholder="Nuevo Nombre">
+  <input type="text" id="updateDescription" placeholder="Nueva Descripción">
+  <button id="updateItem">Actualizar</button>
+
+  <!-- Formulario para eliminar item -->
+  <h2>Eliminar Item</h2>
+  <input type="text" id="deleteId" placeholder="ID">
+  <button id="deleteItem">Eliminar</button>
+
+  <!-- Mostrar items -->
+  <h2>Items</h2>
+  <button id="getItems">Obtener Items</button>
+  <table id="itemsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="conexion.js"></script>
+</body>
+</html>
